@@ -10,7 +10,7 @@ const PREVIEW_MESSAGES = [
 
 const SettingsPage = () => {
   const { theme, setTheme } = useThemeStore();
-  console.log(theme);
+  //console.log(theme);
 
   return (
     <div className='h-screen container mx-auto px-4 pt-20 max-w-5xl'>
@@ -27,7 +27,7 @@ const SettingsPage = () => {
                 transition-colors ${theme === t ? "bg-base-200" : "hover:bg-base-200/50"}`}
               onClick={() => setTheme(t)}
             >
-              <div className='relative h-8 w-full rounded-md overflow-hidden shadow' data-theme={t}>
+              <div className='relative h-8 w-full rounded-md overflow-hidden' data-theme={t}>
                 <div className='absolute inset-0 grid grid-cols-3 gap-px p-1'>
                   <div className='rounded bg-primary'></div>
                   <div className='rounded bg-secondary'></div>
